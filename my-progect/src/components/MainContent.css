@@ -1,0 +1,36 @@
+.main-content {
+  flex: 1;
+  padding: 50px;
+  text-align: left;
+  position: relative;
+}
+
+.main-content h1 {
+  font-size: 3em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.main-content p {
+  font-size: 1.2em;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.portfolio-button {
+  padding: 10px 20px;
+  font-size: 1em;
+  border: 1px solid #333;
+  background: none;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+
+.main-image {
+  position: absolute;
+  bottom: 0;
+  right: 50px;
+  width: 400px;
+  height: auto;
+  object-fit: cover;
+}

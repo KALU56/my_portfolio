@@ -1,0 +1,39 @@
+.sidebar {
+  width: 250px;
+  background-color: #f7f7f7;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.profile-image {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 1.5em;
+  margin: 10px 0;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+}
+
+footer {
+  font-size: 0.8em;
+  color: #777;
+  margin-top: auto;
+}
