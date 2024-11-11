@@ -7,11 +7,7 @@ function MainContent() {
       <h1>I am a full stack developer</h1>
      
       <button className="portfolio-button">View Portfolio</button>
-      <img
-        src="https://via.placeholder.com/400x500"
-        alt="Designer"
-        className="main-image"
-      />
+     
     </div>
   );
 }

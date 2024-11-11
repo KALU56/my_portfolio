@@ -6,7 +6,7 @@ function Sidebar() {
     <div className="sidebar">
       <div className="profile">
         <img
-          src="https://via.placeholder.com/100"
+          src="https://images.pexels.com/photos/1036623/pexels-photo-1036623.jpeg?auto=compress&cs=tinysrgb&w=400"
           alt="Profile"
           className="profile-image"
         />
