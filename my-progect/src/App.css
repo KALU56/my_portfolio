@@ -1,5 +1,26 @@
-.app {
+.App {
   display: flex;
-  height: 100vh;
-  font-family: Arial, sans-serif;
+}
+
+.sidebar {
+  width: 20%;
+  background-color: #f4f4f4;
+  padding: 20px;
+  text-align: center;
+}
+
+.main-content {
+  width: 80%;
+  padding: 40px;
+}
+
+.content {
+  text-align: left;
+}
+
+.profile-pic {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 10px;
 }
