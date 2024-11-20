@@ -1,8 +1,5 @@
-/* Main content background */
+/* Main content alignment */
 .main-content {
-  background-image: url("https://images.pexels.com/photos/1939485/pexels-photo-1939485.jpeg?auto=compress&cs=tinysrgb&w=400");
-  background-size: cover;
-  background-position: center;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -10,29 +7,37 @@
 }
 
 .text-container {
-  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+  background-color: rgba(209, 233, 235, 0.8); /* Semi-transparent white */
   padding: 24px;
   border-radius: 12px;
   text-align: center;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+  max-width: 600px; /* Limit the container width */
 }
 
 .text-container h1 {
   font-size: 2.5rem;
   font-weight: bold;
+  color: #1f2937; /* Dark gray for better readability */
 }
 
 .text-container p {
-  color: #6b7280;
+  color: #6b7280; /* Neutral gray */
   margin-top: 8px;
+  font-size: 1.125rem; /* Slightly larger for readability */
 }
 
 .text-container button {
   margin-top: 16px;
   padding: 12px 24px;
   border: 1px solid #000;
+  border-radius: 8px;
+  background-color: transparent;
   cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .text-container button:hover {
   background-color: #f3f4f6;
+  transform: scale(1.05); /* Subtle zoom effect */
 }

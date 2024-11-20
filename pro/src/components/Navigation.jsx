@@ -1,23 +1,32 @@
 import React from "react";
 
-
-const Navigation = () => {
+const Navigation = ({ setCurrentPage }) => {
   return (
-    <nav className="mt-6 space-y-3 text-sm">
-      {[
-        "Home",
-        "About",
-        "Skills",
-        "Contact",
-      ].map((item) => (
-        <a
-          key={item}
-          href="#"
-          className="block text-gray-600 hover:text-gray-900 transition"
-        >
-          {item}
-        </a>
-      ))}
+    <nav className="mt-6 space-y-2">
+      <button
+        onClick={() => setCurrentPage("home")}
+        className="block w-full py-2 px-4 bg-gray-200 rounded hover:bg-gray-300"
+      >
+        Home
+      </button>
+      <button
+        onClick={() => setCurrentPage("about")}
+        className="block w-full py-2 px-4 bg-gray-200 rounded hover:bg-gray-300"
+      >
+        About
+      </button>
+      <button
+        onClick={() => setCurrentPage("skills")}
+        className="block w-full py-2 px-4 bg-gray-200 rounded hover:bg-gray-300"
+      >
+        Skills
+      </button>
+      <button
+        onClick={() => setCurrentPage("contact")}
+        className="block w-full py-2 px-4 bg-gray-200 rounded hover:bg-gray-300"
+      >
+        Contact
+      </button>
     </nav>
   );
 };
