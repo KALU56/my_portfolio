@@ -1,18 +1,18 @@
-import { useState } from 'react'
-
-import './App.css'
+import { useState } from 'react';
+import './App.css';
+import Header from './component/Header/'; // Adjust the path based on where Header.jsx is located
+import Container from './component/Container/'; // Adjust the path based on where Container.jsx is located
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-     
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      {/* Header Component */}
+      <Header />
+
+      {/* Main Content */}
+      <Container />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
