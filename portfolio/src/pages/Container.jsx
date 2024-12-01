@@ -1,7 +1,9 @@
 import React from "react";
 
+
 const Container = () => {
   return (
+    <>
     <div className="flex flex-col items-center justify-center min-h-screen bg-gray-50 dark:bg-gray-900 text-gray-800 dark:text-white">
       {/* Name */}
       <div className="text-4xl font-bold mb-4">Liluya</div>
@@ -61,6 +63,8 @@ const Container = () => {
       </div>
     </div>
     
+ 
+    </>
   );
 };
 
