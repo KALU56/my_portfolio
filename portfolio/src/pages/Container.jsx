@@ -1,5 +1,5 @@
 import React from "react";
-
+import CardDefault from "./card/"; // Correctly import the card component
 
 const Container = () => {
   return (
@@ -61,9 +61,10 @@ const Container = () => {
           className="w-full h-full object-cover"
         />
       </div>
+
+      {/* Card Component */}
+      <CardDefault />
     </div>
-    
- 
     </>
   );
 };

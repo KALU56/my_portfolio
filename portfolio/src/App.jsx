@@ -6,12 +6,13 @@ import Container from './pages/Container/'; // Adjust the path based on where Co
 function App() {
   return (
     <>
-    
+
       {/* Header Component */}
       <Header />
 
       {/* Main Content */}
       <Container />
+      
     </>
   );
 }

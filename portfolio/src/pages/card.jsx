@@ -1,8 +1,8 @@
 import React from "react";
 
-export function CardDefault() {
+const CardDefault = () => {
   return (
-    <div className="mt-6 w-[600px] h-[900px] shadow-lg border border-gray-300 dark:border-gray-700 rounded-lg">
+    <div className="mt-6 w-[300px] h-[600px] shadow-lg border border-gray-300 dark:border-gray-700 rounded-lg">
       {/* Header with Image */}
       <div className="relative h-2/5 rounded-t-lg overflow-hidden">
         <img
@@ -32,6 +32,6 @@ export function CardDefault() {
       </div>
     </div>
   );
-}
+};
 
-export default card;
+export default CardDefault;
