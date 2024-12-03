@@ -15,7 +15,7 @@ const About = () => {
       {/* Left Section: About Content */}
       <div className="flex-1 text-center lg:text-left">
         {/* Header */}
-        <h1 id="about" className="text-4xl font-bold mb-4">#About Me</h1>
+        <h1 id="about" className="text-4xl font-bold text-yellow-500 mb-4">#About Me</h1>
         <h3 className="text-2xl font-semibold text-gray-300 mb-6">Welcome to my website</h3>
 
         {/* Paragraphs */}
