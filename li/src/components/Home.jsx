@@ -2,7 +2,7 @@ import React from 'react';
 
 const Home = () => {
   return (
-    <div className="min-h-screen bg-[rgb(51,65,85)] text-white flex flex-col items-center pt-12">
+    <div className="min-h-screen bg-[rgb(51,65,85)] text-white flex flex-col items-center pt-40 mb-4">
       {/* Hi, I Am Section */}
       <div className="text-center  mb-2">
         <h2 className="text-xl font-semibold text-yellow-500">Hi, I am</h2>

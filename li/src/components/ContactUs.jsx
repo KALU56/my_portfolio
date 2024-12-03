@@ -3,7 +3,9 @@ import React from "react";
 const ContactUs = () => {
   return (
     <div className="p-6 mx-auto max-w-xl bg-[rgb(51,65,85)] text-white font-[sans-serif]">
-      <h1 className="text-3xl text-yellow-500 font-extrabold text-center">Contact Us</h1>
+      <h1 className="text-3xl font-extrabold text-center">
+        <span className="text-yellow-500">#</span> Contact Us
+      </h1>
       <form className="mt-8 space-y-4">
         <input
           type="text"

@@ -2,7 +2,7 @@ import React from 'react';
 
 const About = () => {
   return (
-    <div className="min-h-screen bg-[rgb(51,65,85)] text-white flex flex-col lg:flex-row-reverse items-center justify-center p-6 lg:p-12">
+    <div className="min-h-screen bg-[rgb(51,65,85)] text-white flex flex-col lg:flex-row-reverse items-center justify-center p-6 lg:p-12 ">
       {/* Right Section: Profile Picture */}
       <div className="w-40 h-40 lg:w-64 lg:h-64 rounded-full overflow-hidden mb-6 lg:mb-0 lg:ml-12">
         <img
