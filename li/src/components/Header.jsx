@@ -14,7 +14,7 @@ const Header = () => {
           className="text-white text-2xl"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
         >
-          ☰
+          {isMenuOpen ? "✖" : "☰"}
         </button>
       </div>
 
