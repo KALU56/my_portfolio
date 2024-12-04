@@ -20,13 +20,13 @@ const About = () => {
 
         {/* Paragraphs */}
         <p className="text-lg text-gray-400 mb-4">
-          Hey there, I'm Kiki. Welcome to my little corner of the internet. I'm a Frontend Engineer, and I focus on building unique, intuitive interfaces and user-centric digital experiences that, well, make websites more interactive.
+        Kalkidan Behailu is a second-year software student at Debre Berhan University, passionate about web development, digital art, and innovation.
         </p>
         <p className="text-lg text-gray-400 mb-4">
-          Welcome to my little corner of the internet. I'm a Frontend Engineer, and I focus on building unique, intuitive interfaces and user-centric digital experiences that, well, make websites more interactive.
+        Skilled in the MERN stack, C++, and hyper-realistic drawing, they blend technology and creativity in unique projects. Active in the TechTonic Tribe community, they mentor others and lead initiatives like emotion-tracking web apps and podcast games
         </p>
         <p className="text-lg text-gray-400">
-          Welcome to my little corner of the internet. I'm a Frontend Engineer, and I focus on building unique, intuitive interfaces and user-centric digital experiences that, well, make websites more interactive.
+        Kalkidan’s journey reflects resilience, a drive for learning, and a vision to merge art and tech for meaningful impact.
         </p>
       </div>
     </div>

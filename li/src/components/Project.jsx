@@ -15,7 +15,7 @@ const Projects = () => {
             className="w-full h-56 object-cover"
           />
           <div className="p-6">
-            <h3 className="text-xl font-bold text-yellow-400 mb-2">Interactive Website</h3>
+            <h3 className="text-xl font-bold text-yellow-400 mb-2">portfolio Website</h3>
             <p className="text-gray-300 mb-4">
               This project demonstrates an interactive UI with animations and smooth
               transitions, focused on user engagement and responsiveness.
@@ -49,7 +49,7 @@ const Projects = () => {
             className="w-full h-56 object-cover"
           />
           <div className="p-6">
-            <h3 className="text-xl font-bold text-yellow-400 mb-2">E-commerce App</h3>
+            <h3 className="text-xl font-bold text-yellow-400 mb-2">apple clone</h3>
             <p className="text-gray-300 mb-4">
               A modern e-commerce application with advanced filtering, cart functionality, and a dynamic checkout experience.
             </p>
