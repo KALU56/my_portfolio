@@ -43,7 +43,7 @@ const VerticalStepper = () => {
           >
             {/* Dot */}
             <div
-              className={`h-6 w-6 rounded-full flex items-center justify-center text-white ${
+              className={`h-6 w-6 sm:h-8 sm:w-8 lg:h-10 lg:w-10 rounded-full flex items-center justify-center text-white ${
                 activeStep === index ? "bg-blue-500" : "bg-gray-500"
               }`}
             >
@@ -52,9 +52,9 @@ const VerticalStepper = () => {
             {/* Connector Line */}
             {index !== steps.length - 1 && (
               <div
-                className={`w-1 h-16 ${
+                className={`w-1 ${
                   activeStep > index ? "bg-blue-500" : "bg-gray-500"
-                }`}
+                } h-8 sm:h-12 lg:h-16`}
               ></div>
             )}
           </div>
@@ -77,6 +77,5 @@ const VerticalStepper = () => {
     </div>
   );
 };
-
 
 export default VerticalStepper;

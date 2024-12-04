@@ -2,7 +2,7 @@ import React from "react";
 
 const ContactUs = () => {
   return (
-    <div className="p-6 mx-auto max-w-xl bg-[rgb(51,65,85)] text-white font-[sans-serif]">
+    <div className="p-6 mx-auto max-w-xl bg-transparent text-white font-[sans-serif]">
       <h1 className="text-3xl font-extrabold text-center">
         <span className="text-yellow-500">#</span> Contact Us
       </h1>
@@ -10,22 +10,22 @@ const ContactUs = () => {
         <input
           type="text"
           placeholder="Name"
-          className="w-full rounded-md py-3 px-4 text-gray-800 bg-gray-100 focus:bg-transparent text-sm outline-yellow-500"
+          className="w-full rounded-md py-3 px-4 text-white bg-transparent border border-gray-300 focus:outline-none focus:border-yellow-500 text-sm placeholder:text-gray-400"
         />
         <input
           type="email"
           placeholder="Email"
-          className="w-full rounded-md py-3 px-4 text-gray-800 bg-gray-100 focus:bg-transparent text-sm outline-yellow-500"
+          className="w-full rounded-md py-3 px-4 text-white bg-transparent border border-gray-300 focus:outline-none focus:border-yellow-500 text-sm placeholder:text-gray-400"
         />
         <input
           type="text"
           placeholder="Subject"
-          className="w-full rounded-md py-3 px-4 text-gray-800 bg-gray-100 focus:bg-transparent text-sm outline-yellow-500"
+          className="w-full rounded-md py-3 px-4 text-white bg-transparent border border-gray-300 focus:outline-none focus:border-yellow-500 text-sm placeholder:text-gray-400"
         />
         <textarea
           placeholder="Message"
           rows="6"
-          className="w-full rounded-md px-4 text-gray-800 bg-gray-100 focus:bg-transparent text-sm pt-3 outline-yellow-500"
+          className="w-full rounded-md px-4 text-white bg-transparent border border-gray-300 focus:outline-none focus:border-yellow-500 text-sm pt-3 placeholder:text-gray-400"
         ></textarea>
         <button
           type="button"
