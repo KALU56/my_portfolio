@@ -27,7 +27,15 @@ const Header = () => {
         <ul className="flex flex-col lg:flex-row justify-center gap-6">
           <li>
             <a
-              href="#about"
+              href="#home" // Link to Home section
+              className="text-white text-lg font-oswald hover:text-gray-300"
+            >
+              Home
+            </a>
+          </li>
+          <li>
+            <a
+              href="#about" // Link to About section
               className="text-white text-lg font-oswald hover:text-gray-300"
             >
               About
@@ -35,15 +43,15 @@ const Header = () => {
           </li>
           <li>
             <a
-              href="#project"
+              href="#projects" // Link to Projects section
               className="text-white text-lg font-oswald hover:text-gray-300"
             >
-              Project
+              Projects
             </a>
           </li>
           <li>
             <a
-              href="#contact"
+              href="#contact" // Link to Contact section
               className="text-white text-lg font-oswald hover:text-gray-300"
             >
               Contact

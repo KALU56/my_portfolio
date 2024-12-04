@@ -34,7 +34,7 @@ const VerticalStepper = () => {
   return (
     <div className="flex">
       {/* Stepper */}
-      <div className="flex flex-col items-center fixed top-1/4 left-4 md:left-8">
+      <div className="flex flex-col items-center fixed top-1/4">
         {steps.map((step, index) => (
           <div
             key={index}
@@ -43,18 +43,16 @@ const VerticalStepper = () => {
           >
             {/* Dot */}
             <div
-              className={`h-8 w-8 rounded-full flex items-center justify-center text-white text-lg font-bold ${
-                activeStep === index
-                  ? "bg-blue-500 hover:scale-110"
-                  : "bg-gray-500 hover:bg-gray-400"
-              } transition-transform duration-200`}
+              className={`h-6 w-6 rounded-full flex items-center justify-center text-white ${
+                activeStep === index ? "bg-blue-500" : "bg-gray-500"
+              }`}
             >
               {index + 1}
             </div>
             {/* Connector Line */}
             {index !== steps.length - 1 && (
               <div
-                className={`w-2 h-20 ${
+                className={`w-1 h-16 ${
                   activeStep > index ? "bg-blue-500" : "bg-gray-500"
                 }`}
               ></div>
@@ -64,12 +62,13 @@ const VerticalStepper = () => {
       </div>
 
       {/* Section Content */}
-      <div className="ml-20 md:ml-32 flex-1">
+      <div className="ml-16 flex-1">
         {sections.map((section, index) => (
           <div
+            id={steps[index].toLowerCase()} // Set id for each section
             key={index}
             ref={(el) => (sectionRefs.current[index] = el)}
-            className="min-h-screen flex items-center justify-center p-8"
+            className="min-h-screen flex items-center justify-center"
           >
             {section}
           </div>
@@ -78,5 +77,6 @@ const VerticalStepper = () => {
     </div>
   );
 };
+
 
 export default VerticalStepper;
