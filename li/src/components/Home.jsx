@@ -17,13 +17,13 @@ const Home = () => {
 
       {/* Icons (GitHub, LinkedIn, Email) */}
       <div className="flex space-x-6 mb-6">
-        <a href="https://https://github.com/KALU56" target="_blank" rel="noopener noreferrer">
+        <a href="https://github.com/KALU56" target="_blank" rel="noopener noreferrer">
           <i className="fab fa-github text-3xl hover:text-gray-400"></i>
         </a>
-        <a href="https://linkedin.com/in/kalkidan-behailu-989144318" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.linkedin.com/in/kalkidan-behailu-989144318/" target="_blank" rel="noopener noreferrer">
           <i className="fab fa-linkedin text-3xl hover:text-gray-400"></i>
         </a>
-        <a href="mailto:kalkidanbehailu677@gmail.com">
+        <a href="https://kalkidanbehailu677@gmail.com">
           <i className="fas fa-envelope text-3xl hover:text-gray-400"></i>
         </a>
       </div>
