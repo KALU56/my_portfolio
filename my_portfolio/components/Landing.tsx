@@ -1,7 +1,13 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
-import { FaLinkedinIn, FaGithub, FaTwitter, FaYoutube } from "react-icons/fa";
+import {
+  FaLinkedinIn,
+  FaGithub,
+  FaTwitter,
+  FaYoutube,
+  FaTelegramPlane,
+} from "react-icons/fa";
 
 const Landing = () => {
   return (
@@ -27,15 +33,32 @@ const Landing = () => {
 
           {/* Socials */}
           <div className="flex space-x-3">
-            {[FaLinkedinIn, FaGithub, FaTwitter, FaYoutube].map((Icon, idx) => (
-              <a
-                key={idx}
-                href="#"
-                className="text-muted-foreground hover:text-green-400 transition"
-              >
-                <Icon size={22} />
-              </a>
-            ))}
+            <a
+              href="https://www.linkedin.com/in/kalkidan-behailu-989144318/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-muted-foreground hover:text-green-400 transition"
+            >
+              <FaLinkedinIn size={22} />
+            </a>
+            <a
+              href="https://github.com/KALU56"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-muted-foreground hover:text-green-400 transition"
+            >
+              <FaGithub size={22} />
+            </a>
+           
+         
+            <a
+              href="https://t.me/Kal1272"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-muted-foreground hover:text-green-400 transition"
+            >
+              <FaTelegramPlane size={22} />
+            </a>
           </div>
         </div>
       </div>
@@ -44,8 +67,8 @@ const Landing = () => {
       <div className="sm:w-1/2 flex justify-center mt-5 sm:mt-0">
         <div className="relative w-32 h-32 sm:w-56 sm:h-56 rounded-full border-2 border-dashed border-green-400 overflow-hidden">
           <img
-            src="/path/to/your/image.jpg"
-            alt="Kal Behailu"
+            src="/profile.png"
+            alt="Kalkidan Behailu"
             className="w-full h-full object-cover rounded-full"
           />
         </div>

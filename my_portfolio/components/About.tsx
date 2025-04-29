@@ -1,42 +1,68 @@
+"use client";
+
+import { Instagram, Mail } from "lucide-react";
 import {
-  Facebook,
-  Twitter,
-  Linkedin,
-  Instagram,
-  Mail
-} from "lucide-react";
+  FaLinkedinIn,
+  FaGithub,
+  FaTelegramPlane
+} from "react-icons/fa";
 
 export default function AboutPage() {
   return (
     <main className="max-w-3xl mx-auto p-6 mt-10">
       <h1 className="text-4xl font-bold mb-4">About Us</h1>
       <p className="text-lg mb-4">
-        Welcome to our e-learning platform! Our mission is to make quality education accessible to everyone,
-        anywhere. Whether you're a student or instructor, we support your journey.
+        Hello! My name is Kalkidan Behailu. I am a software engineering student at Debre Berhan University,
+        currently in my junior year focusing on web and mobile development. I am passionate and dedicated to learning and growing in the software development field. I’m always eager to take on new challenges and expand my skill set. I am currently seeking opportunities to apply my knowledge and gain practical experience in the industry.
       </p>
       <p className="text-lg mb-4">
-        Our platform includes diverse courses, certification, interactive learning, and progress tracking.
+        Our platform offers diverse courses, certifications, interactive learning, and progress tracking tools to support every learner's journey.
       </p>
       <p className="text-lg mb-8">
-        Thank you for being a part of our community. Let’s grow together.
+        Thank you for being a part of our community. Let’s grow together!
       </p>
 
-      <h2 className="text-2xl font-semibold mb-4">Connect With Us</h2>
+      <h2 className="text-2xl font-semibold mb-4">Connect With Me</h2>
       <div className="flex gap-5">
-        <a href="https://facebook.com" target="_blank" aria-label="Facebook">
-          <Facebook className="w-6 h-6 hover:text-blue-600 transition-colors" />
+        <a
+          href="https://www.linkedin.com/in/kalkidan-behailu-989144318/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-muted-foreground hover:text-green-400 transition"
+        >
+          <FaLinkedinIn size={22} />
         </a>
-        <a href="https://twitter.com" target="_blank" aria-label="Twitter">
-          <Twitter className="w-6 h-6 hover:text-blue-400 transition-colors" />
+        <a
+          href="https://github.com/KALU56"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-muted-foreground hover:text-green-400 transition"
+        >
+          <FaGithub size={22} />
         </a>
-        <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
-          <Linkedin className="w-6 h-6 hover:text-blue-700 transition-colors" />
+        <a
+          href="https://t.me/Kal1272"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-muted-foreground hover:text-green-400 transition"
+        >
+          <FaTelegramPlane size={22} />
         </a>
-        <a href="https://instagram.com" target="_blank" aria-label="Instagram">
-          <Instagram className="w-6 h-6 hover:text-pink-500 transition-colors" />
+        <a
+          href="https://instagram.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Instagram"
+          className="text-muted-foreground hover:text-pink-500 transition"
+        >
+          <Instagram className="w-6 h-6" />
         </a>
-        <a href="mailto:support@example.com" aria-label="Email">
-          <Mail className="w-6 h-6 hover:text-red-500 transition-colors" />
+        <a
+          href="mailto:kalkidanbehailu55@gmail.com"
+          aria-label="Email"
+          className="text-muted-foreground hover:text-red-500 transition"
+        >
+          <Mail className="w-6 h-6" />
         </a>
       </div>
     </main>
