@@ -1,13 +1,21 @@
-import { ModeToggle } from "@/components/ModeToggle";
-function Homepage() {
-  return (
-    <div>
-     <ModeToggle />
-     <div className="bg-primary">
-      <p className="text-white text-center text-2xl font-bold">what is thooo</p>
+"use client";
 
-     </div>
-    </div>
+import Landing from "@/components/Landing";
+import About from "@/components/About";
+import Projects from "@/components/Projects";
+
+export default function HomePage() {
+  return (
+    <main className="scroll-smooth">
+      <section id="landing">
+        <Landing />
+      </section>
+      <section id="about">
+        <About />
+      </section>
+      <section id="projects">
+        <Projects />
+      </section>
+    </main>
   );
 }
-export default Homepage;

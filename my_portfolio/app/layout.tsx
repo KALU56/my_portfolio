@@ -1,5 +1,7 @@
+// app/layout.tsx
 import type { Metadata } from "next";
-import { ThemeProvider } from "@/components/theme-provider"
+import { ThemeProvider } from "@/components/theme-provider";
+import Header from "@/components/Header"; // Make sure the path is correct
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
@@ -25,18 +27,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-                  <ThemeProvider
-            attribute="class"
-            defaultTheme="system"
-            enableSystem
-            disableTransitionOnChange
-          >
-             {children}
-          </ThemeProvider>
-       
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <Header /> {/* Move your header here */}
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );
