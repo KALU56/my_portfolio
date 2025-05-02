@@ -1,13 +1,7 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
-import {
-  FaLinkedinIn,
-  FaGithub,
-  FaTwitter,
-  FaYoutube,
-  FaTelegramPlane,
-} from "react-icons/fa";
+import { FaLinkedinIn, FaGithub, FaTelegramPlane } from "react-icons/fa";
 
 const Landing = () => {
   return (
@@ -49,8 +43,6 @@ const Landing = () => {
             >
               <FaGithub size={22} />
             </a>
-           
-         
             <a
               href="https://t.me/Kal1272"
               target="_blank"
@@ -66,9 +58,11 @@ const Landing = () => {
       {/* Right - Profile Picture */}
       <div className="sm:w-1/2 flex justify-center mt-5 sm:mt-0">
         <div className="relative w-32 h-32 sm:w-56 sm:h-56 rounded-full border-2 border-dashed border-green-400 overflow-hidden">
-          <img
+          <Image
             src="/profile.png"
             alt="Kalkidan Behailu"
+            width={224} // Adjust the width according to your design
+            height={224} // Adjust the height accordingly
             className="w-full h-full object-cover rounded-full"
           />
         </div>
