@@ -2,7 +2,7 @@
 
 import { Button } from "@/components/ui/button";
 import { FaLinkedinIn, FaGithub, FaTelegramPlane } from "react-icons/fa";
-
+import Image from "next/image"; // Import the Image component from Next.js
 const Landing = () => {
   return (
     <section
