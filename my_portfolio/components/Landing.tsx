@@ -12,7 +12,7 @@ const Landing = () => {
       {/* Left - Text */}
       <div className="sm:w-1/2 text-center sm:text-left">
         <h1 className="text-4xl sm:text-5xl font-bold mt-1">
-          I'm <br /> Kalkidan <span className="text-green-400">Behailu</span>
+          I&rsquo;m <br /> Kalkidan <span className="text-green-400">Behailu</span>
         </h1>
         <p className="text-muted-foreground mt-3 text-base sm:text-lg">
           I excel at crafting elegant digital experiences with modern technologies.

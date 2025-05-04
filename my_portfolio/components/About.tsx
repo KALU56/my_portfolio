@@ -2,8 +2,6 @@
 
 import { Instagram, Mail } from "lucide-react";
 import { FaLinkedinIn, FaGithub, FaTelegramPlane } from "react-icons/fa";
-import Image from "next/image"; // Import the Image component from Next.js
-
 export default function AboutPage() {
   return (
     <main className="max-w-3xl mx-auto p-6 mt-10">
