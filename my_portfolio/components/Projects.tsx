@@ -1,14 +1,8 @@
 "use client";
 
 import Image from "next/image";
-import { Button } from "@/components/ui/button";
-import {
-  Card,
-  CardHeader,
-  CardTitle,
-  CardContent,
-  CardFooter,
-} from "@/components/ui/card";
+import { FaGithub } from "react-icons/fa";
+import { motion } from "framer-motion"; // Import motion for animations
 
 interface Project {
   title: string;
@@ -18,94 +12,102 @@ interface Project {
   image: string;
 }
 
-const ProjectCard = ({ title, description, technologies, link, image }: Project) => (
-  <Card className="bg-art-paper border border-art-border-gray shadow-art-card rounded-lg overflow-hidden transition-transform hover:-translate-y-2">
-    <div className="relative w-full h-56 overflow-hidden rounded-t-lg border-b-4 border-art-border-dark-gray">
+const ProjectCard = ({ title, description, technologies, link, image, isLeftAligned }: Project & { isLeftAligned: boolean }) => (
+  <motion.div
+    className={`flex flex-col sm:flex-row items-center sm:items-start gap-8 sm:gap-12 w-full ${isLeftAligned ? 'sm:flex-row-reverse' : ''}`}
+    initial={{ opacity: 0, x: isLeftAligned ? 50 : -50 }}
+    whileInView={{ opacity: 1, x: 0 }}
+    viewport={{ once: true, amount: 0.3 }}
+    transition={{ duration: 0.6 }}
+  >
+    {/* Circle with Project Image */}
+    <div className="w-28 h-28 sm:w-40 sm:h-40 relative rounded-full border-4 border-art-border-dark-gray overflow-hidden flex-shrink-0 shadow-lg">
       <Image
         src={image}
         alt={`Screenshot of ${title}`}
         fill
-        className="object-cover grayscale-[40%] hover:grayscale-0 transition-all duration-500 ease-in-out"
+        className="object-cover"
       />
     </div>
-    <CardHeader className="px-6 pt-4">
-      <CardTitle className="text-art-dark-blue font-heading text-xl">{title}</CardTitle>
-    </CardHeader>
-    <CardContent className="px-6">
-      <p className="text-art-gray text-sm italic mb-4 font-body">{description}</p>
-      <div className="flex flex-wrap gap-2">
+
+    {/* Right Side: Project Title, GitHub Link, and Description */}
+    <div className={`flex-1 p-6 rounded-lg shadow-xl dark:bg-black bg-white dark:text-white text-art-dark-blue bg-opacity-90 backdrop-filter backdrop-blur-sm`}>
+      <h3 className="text-2xl sm:text-3xl font-bold mb-2">{title}</h3>
+      <div className={`flex items-center ${isLeftAligned ? 'sm:justify-end' : 'sm:justify-start'} space-x-2 mb-4`}>
+        <a href={link} target="_blank" rel="noopener noreferrer" className="text-art-dark-blue dark:text-white hover:text-art-red transition duration-300" aria-label={`GitHub repository for ${title}`}>
+          <FaGithub size={24} />
+        </a>
+      </div>
+      <p className="text-sm sm:text-base italic font-body leading-relaxed">{description}</p>
+
+      {/* Technologies */}
+      <div className={`flex flex-wrap gap-2 mt-4 ${isLeftAligned ? 'sm:justify-end' : 'sm:justify-start'}`}>
         {technologies.map((tech, index) => (
           <span
             key={index}
-            className="bg-art-light-gray text-art-dark-blue text-xs px-3 py-1 rounded-md border border-art-border-gray font-medium font-body"
+            className="bg-art-light-gray dark:bg-art-dark-gray text-art-dark-blue dark:text-white text-xs sm:text-sm px-3 py-1 rounded-full border border-art-border-gray font-medium font-body shadow-sm"
           >
             {tech}
           </span>
         ))}
       </div>
-    </CardContent>
-    <CardFooter className="px-6 pb-6">
-      <Button asChild className="bg-art-red hover:bg-art-dark-red text-white font-semibold text-sm px-6 py-2 rounded-md shadow-art-button transition transform hover:scale-105">
-        <a href={link} target="_blank" rel="noopener noreferrer">
-          Watch Project
-        </a>
-      </Button>
-    </CardFooter>
-  </Card>
+    </div>
+  </motion.div>
 );
 
 const Projects = () => {
   const projects: Project[] = [
     {
       title: "E-Self Platform",
-      description:
-        "Frontend-only e-learning platform for students and instructors. Students browse and buy courses; instructors manage content and track earnings via a dashboard.",
+      description: "Frontend-only e-learning platform for students and instructors. Students browse and buy courses; instructors manage content and track earnings via a dashboard.",
       technologies: ["Next.js", "Tailwind CSS", "TypeScript"],
-      link: "#",
-      image: "/pro.png", // Ensure this path is correct
+      link: "https://github.com/KALU56/eself-platform",
+      image: "/pro.png",
     },
     {
       title: "Furniture App",
-      description:
-        "Mobile e-commerce app for Browse and managing furniture with CRUD functionality, a favorites system, and responsive UI.",
+      description: "Mobile e-commerce app for browsing and managing furniture with CRUD functionality, a favorites system, and responsive UI.",
       technologies: ["React Native", "TypeScript", "Tailwind CSS"],
-      link: "#",
-      image: "/mobile.jpg", // Ensure this path is correct
+      link: "https://github.com/KALU56/furniture-app",
+      image: "/mobile.jpg",
     },
     {
       title: "Project 3",
-      description:
-        "Template full-stack app using Vue.js, Express, and PostgreSQL. Designed for showcasing scalable architecture and development skills.",
+      description: "Template full-stack app using Vue.js, Express, and PostgreSQL. Designed for showcasing scalable architecture and development skills.",
       technologies: ["Vue.js", "Express", "PostgreSQL"],
-      link: "#",
-      image: "/images/project3.jpg", // Ensure this path exists
+      link: "https://github.com/KALU56/project3",
+      image: "/images/project3.jpg",
     },
     {
       title: "Admin Dashboard",
-      description:
-        "Clean, responsive admin panel to manage users, analytics, and permissions. Includes data visualization with Chart.js.",
+      description: "Clean, responsive admin panel to manage users, analytics, and permissions. Includes data visualization with Chart.js.",
       technologies: ["React", "Tailwind CSS", "Chart.js"],
-      link: "#",
-      image: "/images/admin-dashboard.jpg", // Ensure this path exists
+      link: "https://github.com/KALU56/admin-dashboard",
+      image: "/images/admin-dashboard.jpg",
     },
     {
       title: "Portfolio Website",
-      description:
-        "Personal portfolio site built with Next.js and Tailwind CSS, animated with Framer Motion. Showcases work, skills, and contact details.",
+      description: "Personal portfolio site built with Next.js and Tailwind CSS, animated with Framer Motion. Showcases work, skills, and contact details.",
       technologies: ["Next.js", "Tailwind CSS", "Framer Motion"],
-      link: "#",
-      image: "/images/portfolio.jpg", // Ensure this path exists
+      link: "https://github.com/KALU56/portfolio-website",
+      image: "/images/portfolio.jpg",
     },
   ];
 
   return (
-    <section id="projects" className="py-16 px-6 max-w-screen-xl mx-auto bg-light-canvas-texture">
-      <h2 className="text-4xl text-center font-heading text-art-dark-blue mb-12 tracking-wide">
+    <section id="projects" className="py-20 px-6 max-w-screen-xl mx-auto bg-light-canvas-texture dark:bg-dark-canvas-texture relative">
+      <h2 className="text-4xl sm:text-5xl text-center font-heading text-art-dark-blue dark:text-white mb-16 tracking-wide">
         🎨 My Creative Projects
       </h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+      <div className="flex flex-col space-y-20">
         {projects.map((project, index) => (
-          <ProjectCard key={index} {...project} />
+          <div key={index} className="relative">
+            <div className="hidden sm:flex items-center justify-center w-10 h-10 rounded-full bg-art-dark-blue dark:bg-art-light-gray absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 border-4 border-white z-10 shadow-md">
+              <span className="text-white font-bold text-lg">{index + 1}</span>
+            </div>
+            <ProjectCard {...project} isLeftAligned={index % 2 === 0} />
+          </div>
         ))}
       </div>
     </section>

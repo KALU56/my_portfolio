@@ -8,13 +8,13 @@ const Landing = () => {
   return (
     <section
       id="home"
-      className="container mx-auto flex flex-col items-center justify-center px-6 py-16 max-w-screen-md min-h-[90vh] text-center bg-paper-texture"
+      className="container mx-auto flex flex-col items-center justify-center px-6 py-16 max-w-screen-md min-h-[90vh] text-center bg-white dark:bg-black text-black dark:text-white"
     >
-      {/* Profile Picture at the top */}
+      {/* Profile Picture */}
       <div className="mb-8">
-        <div className="relative w-40 h-40 sm:w-48 sm:h-48 rounded-full border-4 border-art-red overflow-hidden mx-auto shadow-art-soft">
+        <div className="relative w-40 h-40 sm:w-48 sm:h-48 rounded-full border-4 border-red-600 dark:border-red-500 overflow-hidden mx-auto shadow-lg">
           <Image
-            src="/profile.png" // Ensure this path is correct
+            src="/profile.png"
             alt="Kalkidan Behailu"
             width={192}
             height={192}
@@ -23,48 +23,33 @@ const Landing = () => {
         </div>
       </div>
 
-      {/* Text Section */}
+      {/* Name and Description */}
       <div>
-        <h1 className="text-5xl sm:text-6xl font-heading text-art-dark-blue">
-          I&rsquo;m <span className="text-art-red">Kalkidan Behailu</span>
+        <h1 className="text-5xl sm:text-6xl font-bold">
+          I&rsquo;m <span className="text-red-600 dark:text-red-500">Kalkidan Behailu</span>
         </h1>
-        <p className="text-art-gray mt-4 text-lg sm:text-xl font-body leading-relaxed">
+        <p className="mt-4 text-lg sm:text-xl leading-relaxed">
           Crafting elegant digital experiences with modern technologies.
         </p>
       </div>
 
       {/* Buttons and Socials */}
       <div className="mt-6 flex flex-col items-center space-y-4">
-        <Button asChild className="bg-art-red hover:bg-art-dark-red px-8 py-3 text-white rounded-lg shadow-art-button transition transform hover:scale-105">
-          <a href="/path/to/your/cv.pdf" download> {/* Update path to your CV */}
+        <Button asChild className="bg-red-600 dark:bg-red-500 hover:bg-red-700 dark:hover:bg-red-600 px-8 py-3 text-white rounded-lg shadow-md transition-transform hover:scale-105">
+          <a href="/path/to/your/cv.pdf" download>
             Download CV
           </a>
         </Button>
 
-        <div className="flex space-x-4">
-          <a
-            href="https://www.linkedin.com/in/kalkidan-behailu-989144318/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-art-dark-blue hover:text-art-red transition"
-          >
-            <FaLinkedinIn size={22} />
+        <div className="flex space-x-4 mt-4">
+          <a href="https://linkedin.com" className="hover:text-blue-600 dark:hover:text-blue-400 transition">
+            <FaLinkedinIn size={28} />
           </a>
-          <a
-            href="https://github.com/KALU56"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-art-dark-blue hover:text-art-red transition"
-          >
-            <FaGithub size={22} />
+          <a href="https://github.com" className="hover:text-black dark:hover:text-white transition">
+            <FaGithub size={28} />
           </a>
-          <a
-            href="https://t.me/Kal1272"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-art-dark-blue hover:text-art-red transition"
-          >
-            <FaTelegramPlane size={22} />
+          <a href="https://t.me" className="hover:text-blue-500 dark:hover:text-blue-300 transition">
+            <FaTelegramPlane size={28} />
           </a>
         </div>
       </div>
