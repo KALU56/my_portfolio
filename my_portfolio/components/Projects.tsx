@@ -89,7 +89,7 @@ const Projects = () => {
       description:
         "Frontend-only e-learning platform for students and instructors. Students browse and buy courses; instructors manage content and track earnings via a dashboard.",
       technologies: ["Next.js", "Tailwind CSS", "TypeScript"],
-      link: "https://github.com/KALU56/eself-platform",
+      link: "https://github.com/KALU56/E-Self.git",
       image: "/pro.png",
     },
     {
@@ -97,15 +97,15 @@ const Projects = () => {
       description:
         "Mobile e-commerce app for browsing and managing furniture with CRUD functionality, a favorites system, and responsive UI.",
       technologies: ["React Native", "TypeScript", "Tailwind CSS"],
-      link: "https://github.com/KALU56/furniture-app",
+      link: "https://github.com/KALU56/React_Native_learn.git",
       image: "/mobile.jpg",
     },
     {
       title: "Project 3",
       description:
-        "Template full-stack app using Vue.js, Express, and PostgreSQL. Designed for showcasing scalable architecture and development skills.",
-      technologies: ["Vue.js", "Express", "PostgreSQL"],
-      link: "https://github.com/KALU56/project3",
+        "MY PORTFOIO.",
+      technologies: ["next-js", "TypeScript", "Tailwind CSS"],
+      link: "https://github.com/KALU56/my_portfolio.git",
       image: "/portfoio.png",
     },
     {
@@ -117,11 +117,11 @@ const Projects = () => {
       image: "/bloodbank.png",
     },
     {
-      title: "Portfolio Website",
-      description: "Personal portfolio website built with Next.js.",
-      technologies: ["Next.js", "Tailwind CSS"],
-      link: "https://github.com/KALU56/portfolio-website",
-      image: "/images/portfolio.jpg",
+      title: "poromodoro extention",
+      description: "poromodoro website is a productivity tool that helps users manage their time effectively. It uses the Pomodoro Technique, which involves breaking work into intervals, traditionally 25 minutes in length, separated by short breaks.",
+      technologies: ["react vite", "Tailwind CSS"],
+      link: "https://github.com/KALU56/my_promodoro.git",
+      image: "/poromodoro.png",
     },
   ];
 
