@@ -12,9 +12,18 @@ interface Project {
   image: string;
 }
 
-const ProjectCard = ({ title, description, technologies, link, image, isLeftAligned }: Project & { isLeftAligned: boolean }) => (
+const ProjectCard = ({
+  title,
+  description,
+  technologies,
+  link,
+  image,
+  isLeftAligned,
+}: Project & { isLeftAligned: boolean }) => (
   <motion.div
-    className={`flex flex-col sm:flex-row items-center sm:items-start gap-8 sm:gap-12 w-full ${isLeftAligned ? 'sm:flex-row-reverse' : ''}`}
+    className={`flex flex-col sm:flex-row items-center sm:items-start gap-8 sm:gap-12 w-full ${
+      isLeftAligned ? "sm:flex-row-reverse" : ""
+    }`}
     initial={{ opacity: 0, x: isLeftAligned ? 50 : -50 }}
     whileInView={{ opacity: 1, x: 0 }}
     viewport={{ once: true, amount: 0.3 }}
@@ -31,17 +40,35 @@ const ProjectCard = ({ title, description, technologies, link, image, isLeftAlig
     </div>
 
     {/* Right Side: Project Title, GitHub Link, and Description */}
-    <div className={`flex-1 p-6 rounded-lg shadow-xl dark:bg-black bg-white dark:text-white text-art-dark-blue bg-opacity-90 backdrop-filter backdrop-blur-sm`}>
+    <div
+      className={`flex-1 p-6 rounded-lg shadow-xl dark:bg-black bg-white dark:text-white text-art-dark-blue bg-opacity-90 backdrop-filter backdrop-blur-sm`}
+    >
       <h3 className="text-2xl sm:text-3xl font-bold mb-2">{title}</h3>
-      <div className={`flex items-center ${isLeftAligned ? 'sm:justify-end' : 'sm:justify-start'} space-x-2 mb-4`}>
-        <a href={link} target="_blank" rel="noopener noreferrer" className="text-art-dark-blue dark:text-white hover:text-art-red transition duration-300" aria-label={`GitHub repository for ${title}`}>
+      <div
+        className={`flex items-center ${
+          isLeftAligned ? "sm:justify-end" : "sm:justify-start"
+        } space-x-2 mb-4`}
+      >
+        <a
+          href={link}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-art-dark-blue dark:text-white hover:text-art-red transition duration-300"
+          aria-label={`GitHub repository for ${title}`}
+        >
           <FaGithub size={24} />
         </a>
       </div>
-      <p className="text-sm sm:text-base italic font-body leading-relaxed">{description}</p>
+      <p className="text-sm sm:text-base italic font-body leading-relaxed">
+        {description}
+      </p>
 
       {/* Technologies */}
-      <div className={`flex flex-wrap gap-2 mt-4 ${isLeftAligned ? 'sm:justify-end' : 'sm:justify-start'}`}>
+      <div
+        className={`flex flex-wrap gap-2 mt-4 ${
+          isLeftAligned ? "sm:justify-end" : "sm:justify-start"
+        }`}
+      >
         {technologies.map((tech, index) => (
           <span
             key={index}
@@ -59,43 +86,50 @@ const Projects = () => {
   const projects: Project[] = [
     {
       title: "E-Self Platform",
-      description: "Frontend-only e-learning platform for students and instructors. Students browse and buy courses; instructors manage content and track earnings via a dashboard.",
+      description:
+        "Frontend-only e-learning platform for students and instructors. Students browse and buy courses; instructors manage content and track earnings via a dashboard.",
       technologies: ["Next.js", "Tailwind CSS", "TypeScript"],
       link: "https://github.com/KALU56/eself-platform",
       image: "/pro.png",
     },
     {
       title: "Furniture App",
-      description: "Mobile e-commerce app for browsing and managing furniture with CRUD functionality, a favorites system, and responsive UI.",
+      description:
+        "Mobile e-commerce app for browsing and managing furniture with CRUD functionality, a favorites system, and responsive UI.",
       technologies: ["React Native", "TypeScript", "Tailwind CSS"],
       link: "https://github.com/KALU56/furniture-app",
       image: "/mobile.jpg",
     },
     {
       title: "Project 3",
-      description: "Template full-stack app using Vue.js, Express, and PostgreSQL. Designed for showcasing scalable architecture and development skills.",
+      description:
+        "Template full-stack app using Vue.js, Express, and PostgreSQL. Designed for showcasing scalable architecture and development skills.",
       technologies: ["Vue.js", "Express", "PostgreSQL"],
       link: "https://github.com/KALU56/project3",
-      image: "/images/project3.jpg",
+      image: "/portfoio.png",
     },
     {
-      title: "Admin Dashboard",
-      description: "Clean, responsive admin panel to manage users, analytics, and permissions. Includes data visualization with Chart.js.",
-      technologies: ["React", "Tailwind CSS", "Chart.js"],
+      title: "Blood Bank Management System",
+      description:
+        "The importance of a reliable blood donation system cannot be overstated. Blood banks play a crucial role in healthcare, ensuring that safe and sufficient blood supplies are available in times of need. This system offers digital solutions for donor registration, health monitoring, and appointment scheduling.",
+      technologies: ["Python", "Tkinter", "SQL Server"],
       link: "https://github.com/KALU56/admin-dashboard",
-      image: "/images/admin-dashboard.jpg",
+      image: "/bloodbank.png",
     },
     {
       title: "Portfolio Website",
-      description: "Personal portfolio site built with Next.js and Tailwind CSS, animated with Framer Motion. Showcases work, skills, and contact details.",
-      technologies: ["Next.js", "Tailwind CSS", "Framer Motion"],
+      description: "Personal portfolio website built with Next.js.",
+      technologies: ["Next.js", "Tailwind CSS"],
       link: "https://github.com/KALU56/portfolio-website",
       image: "/images/portfolio.jpg",
     },
   ];
 
   return (
-    <section id="projects" className="py-20 px-6 max-w-screen-xl mx-auto bg-light-canvas-texture dark:bg-dark-canvas-texture relative">
+    <section
+      id="projects"
+      className="py-20 px-6 max-w-screen-xl mx-auto bg-light-canvas-texture dark:bg-dark-canvas-texture relative"
+    >
       <h2 className="text-4xl sm:text-5xl text-center font-heading text-art-dark-blue dark:text-white mb-16 tracking-wide">
         🎨 My Creative Projects
       </h2>

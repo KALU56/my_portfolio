@@ -12,7 +12,7 @@ const Landing = () => {
     >
       {/* Profile Picture */}
       <div className="mb-8">
-        <div className="relative w-40 h-40 sm:w-48 sm:h-48 rounded-full border-4 border-red-600 dark:border-red-500 overflow-hidden mx-auto shadow-lg">
+        <div className="relative w-40 h-40 sm:w-48 sm:h-48 rounded-full border-4 border-gray-600 dark:border-gray-400 overflow-hidden mx-auto shadow-lg">
           <Image
             src="/profile.png"
             alt="Kalkidan Behailu"
@@ -26,7 +26,7 @@ const Landing = () => {
       {/* Name and Description */}
       <div>
         <h1 className="text-5xl sm:text-6xl font-bold">
-          I&rsquo;m <span className="text-red-600 dark:text-red-500">Kalkidan Behailu</span>
+          I&rsquo;m <span className="text-black dark:text-white">Kalkidan Behailu</span>
         </h1>
         <p className="mt-4 text-lg sm:text-xl leading-relaxed">
           Crafting elegant digital experiences with modern technologies.
@@ -35,7 +35,7 @@ const Landing = () => {
 
       {/* Buttons and Socials */}
       <div className="mt-6 flex flex-col items-center space-y-4">
-        <Button asChild className="bg-red-600 dark:bg-red-500 hover:bg-red-700 dark:hover:bg-red-600 px-8 py-3 text-white rounded-lg shadow-md transition-transform hover:scale-105">
+        <Button asChild className="bg-black dark:bg-white hover:bg-gray-800 dark:hover:bg-gray-200 px-8 py-3 text-white dark:text-black rounded-lg shadow-md transition-transform hover:scale-105">
           <a href="/path/to/your/cv.pdf" download>
             Download CV
           </a>
