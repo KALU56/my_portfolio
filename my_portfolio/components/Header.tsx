@@ -11,7 +11,7 @@ const Header = () => (
         <Link href="/" className="hover:text-green-500 dark:hover:text-green-400 transition">Home</Link>
         <Link href="#projects" className="hover:text-green-500 dark:hover:text-green-400 transition">Projects</Link>
         <Link href="#about" className="hover:text-green-500 dark:hover:text-green-400 transition">About Me</Link>
-        <Link href="/resume.pdf" download className="hover:text-green-500 dark:hover:text-green-400 transition">Resume</Link>
+        <Link href="https://docs.google.com/document/d/1NZJRafnTgymFY0MDmAT-WRZReSluIOmYAkdAoQRiXuY/edit?usp=sharing" download className="hover:text-green-500 dark:hover:text-green-400 transition">Resume</Link>
       </nav>
       <div className="flex items-center">
         <ModeToggle />
