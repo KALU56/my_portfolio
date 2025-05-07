@@ -2,63 +2,73 @@
 
 import { Instagram, Mail } from "lucide-react";
 import { FaLinkedinIn, FaGithub, FaTelegramPlane } from "react-icons/fa";
+
 export default function AboutPage() {
   return (
-    <main className="max-w-3xl mx-auto p-6 mt-10">
-      <h1 className="text-4xl font-bold mb-4">About Us</h1>
-      <p className="text-lg mb-4">
-        Hello! My name is Kalkidan Behailu. I am a software engineering student at Debre Berhan University,
-        currently in my junior year focusing on web and mobile development. I am passionate and dedicated to learning and growing in the software development field. I&rsquo;m always eager to take on new challenges and expand my skill set. I am currently seeking opportunities to apply my knowledge and gain practical experience in the industry.
-      </p>
-      <p className="text-lg mb-4">
-        Our platform offers diverse courses, certifications, interactive learning, and progress tracking tools to support every learner's journey.
-      </p>
-      <p className="text-lg mb-8">
-        Thank you for being a part of our community. Let&rsquo;s grow together!
-      </p>
+    <main className="min-h-screen bg-canvas-texture text-art-charcoal flex flex-col items-center justify-center py-16">
+      <div className="max-w-5xl w-full px-6">
+        <h1 className="text-5xl font-heading text-center mb-8 text-art-dark-blue">
+          About Me
+        </h1>
 
-      <h2 className="text-2xl font-semibold mb-4">Connect With Me</h2>
-      <div className="flex gap-5">
-        <a
-          href="https://www.linkedin.com/in/kalkidan-behailu-989144318/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-muted-foreground hover:text-green-400 transition"
-        >
-          <FaLinkedinIn size={22} />
-        </a>
-        <a
-          href="https://github.com/KALU56"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-muted-foreground hover:text-green-400 transition"
-        >
-          <FaGithub size={22} />
-        </a>
-        <a
-          href="https://t.me/Kal1272"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-muted-foreground hover:text-green-400 transition"
-        >
-          <FaTelegramPlane size={22} />
-        </a>
-        <a
-          href="https://instagram.com"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="Instagram"
-          className="text-muted-foreground hover:text-pink-500 transition"
-        >
-          <Instagram className="w-6 h-6" />
-        </a>
-        <a
-          href="mailto:kalkidanbehailu55@gmail.com"
-          aria-label="Email"
-          className="text-muted-foreground hover:text-red-500 transition"
-        >
-          <Mail className="w-6 h-6" />
-        </a>
+        <section className="flex flex-col items-center text-center">
+          <p className="text-lg md:text-xl mb-6 max-w-2xl text-art-gray leading-relaxed font-body">
+            Hello! I’m Kalkidan Behailu, a passionate software engineering student at Debre Berhan University,
+            currently in my junior year. I specialize in web and mobile development and enjoy tackling new challenges
+            to enhance my skills. I’m eager to take on real-world projects and grow in the tech industry.
+          </p>
+          <p className="text-lg md:text-xl mb-8 max-w-2xl text-art-gray leading-relaxed font-body">
+            Our platform offers a range of learning resources, certifications, and interactive tools to help you achieve
+            your goals. Let's take the next step in your learning journey together!
+          </p>
+        </section>
+
+        <section className="mt-12 flex justify-center space-x-8">
+          <a
+            href="https://www.linkedin.com/in/kalkidan-behailu-989144318/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-art-gray hover:text-art-accent-green transition-colors duration-300"
+          >
+            <FaLinkedinIn size={32} />
+          </a>
+          <a
+            href="https://github.com/KALU56"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-art-gray hover:text-art-dark-blue transition-colors duration-300"
+          >
+            <FaGithub size={32} />
+          </a>
+          <a
+            href="https://t.me/Kal1272"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-art-gray hover:text-art-accent-blue transition-colors duration-300"
+          >
+            <FaTelegramPlane size={32} />
+          </a>
+          <a
+            href="https://instagram.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Instagram"
+            className="text-art-gray hover:text-art-accent-pink transition-colors duration-300"
+          >
+            <Instagram className="w-8 h-8" />
+          </a>
+          <a
+            href="mailto:kalkidanbehailu55@gmail.com"
+            aria-label="Email"
+            className="text-art-gray hover:text-art-accent-red transition-colors duration-300"
+          >
+            <Mail className="w-8 h-8" />
+          </a>
+        </section>
+
+        <section className="mt-16 text-center text-art-light-gray text-sm font-body">
+          <p>&copy; 2025 Kalkidan Behailu. All rights reserved.</p>
+        </section>
       </div>
     </main>
   );

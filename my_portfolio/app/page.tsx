@@ -7,12 +7,12 @@ export default function HomePage() {
 <div>
 
  <Landing />
-
+ <Projects />
 
 <AboutPage />
 
 
- <Projects />
+
 
 
 </div>
