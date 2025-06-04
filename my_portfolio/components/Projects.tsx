@@ -117,7 +117,7 @@ const Projects = () => {
       image: "/bloodbank.png",
     },
     {
-      title: "poromodoro extention",
+      title: "poromodoro",
       description: "poromodoro website is a productivity tool that helps users manage their time effectively. It uses the Pomodoro Technique, which involves breaking work into intervals, traditionally 25 minutes in length, separated by short breaks.",
       technologies: ["react vite", "Tailwind CSS"],
       link: "https://github.com/KALU56/my_promodoro.git",
