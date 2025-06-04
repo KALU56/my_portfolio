@@ -125,7 +125,7 @@ const Projects = () => {
     },
       {
       title: "abel-begena",
-      description: "this is for abel begena .it is like portfolio website for abel begena.becase of i wan to beuld the project then i work this ", 
+      description: "this is for abel begena .it is like portfolio website for abel begena.becase of i want to beuld the project then i work this ", 
       technologies: ["next-js", "Tailwind CSS"],
       link: "https://github.com/KALU56/-Abel-Begena.git",
       image: "/abel.png",
