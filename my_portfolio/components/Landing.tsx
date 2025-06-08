@@ -36,7 +36,7 @@ const Landing = () => {
       {/* Buttons and Socials */}
       <div className="mt-6 flex flex-col items-center space-y-4">
         <Button asChild className="bg-black dark:bg-white hover:bg-gray-800 dark:hover:bg-gray-200 px-8 py-3 text-white dark:text-black rounded-lg shadow-md transition-transform hover:scale-105">
-          <a href="https://docs.google.com/document/d/1NZJRafnTgymFY0MDmAT-WRZReSluIOmYAkdAoQRiXuY/edit?usp=sharing" download>
+          <a href="https://docs.google.com/document/d/1aQjFiVVcPdqQa3qfYs-m-pVn3cNqEfYFo2hBNPZEu9s/edit?tab=t.0" download>
             Download CV
           </a>
         </Button>
